@@ -1,0 +1,20 @@
+# Instalar o Golang
+# Instalar o Go é basicamente copiar alguns arquivos. Siga o script abaixo:
+
+# Atualize o sistema
+sudo apt-get update
+# baixe a última versão
+sudo wget https://dl.google.com/go/go1.10.1.linux-amd64.tar.gz
+# dezipe
+sudo tar -C /usr/local -xzf go1.10.1.linux-amd64.tar.gz
+# Coloque os binários no path
+export PATH=$PATH:/usr/local/go/bin
+
+# Encerre a sessao do teu terminal
+# Abra novamente o terminal, verifique se o go foi instalado com sucesso com o seguinte comando
+go version
+
+# devera ser retornado algo como:
+go version go1.10.1 linux/amd64
+
+
